@@ -43,4 +43,3 @@ Record the actual Python/package versions and random seeds used for submitted ex
 - Cite external code precisely and explain the connection between equations and code.
 - Do not backdate work or rewrite a checkpoint after it has been reviewed.
 
-See the assignment specification and course LMS for authoritative requirements and cutoff times.

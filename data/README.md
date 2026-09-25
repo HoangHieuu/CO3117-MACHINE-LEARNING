@@ -8,8 +8,6 @@
 - Prediction target: TODO — confirm activity label and class mapping.
 - Use case: predict a person's current physical activity from smartphone inertial measurements.
 
-This is a proposal until the student confirms and freezes the dataset source/version and protocol. Do not commit raw or processed data without checking course and repository policy. Keep this README and scripts/configuration under version control.
-
 ## Split and evaluation
 
 - Split policy: TODO — use subject/group-aware splitting when repeated measurements share a person.
