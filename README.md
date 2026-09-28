@@ -4,12 +4,13 @@ Repository for the individual CO3117 assignment. The project follows one predict
 
 ## Project status
 
-- Assignment checkpoint: R0 setup in progress.
-- Dataset/use case: proposed UCI Human Activity Recognition Using Smartphones; confirm and freeze the exact version and protocol before experiments.
+- Assignment checkpoint: R0 data protocol and validation baseline prepared in the working tree; the handwritten catch-up/baseline diagnostic and release-baseline tag remain pending.
+- Dataset/use case: UCI Human Activity Recognition Using Smartphones, dataset version 1.0 (UCI record 240; DOI 10.24432/C54S4K). Predict one of six activities from smartphone inertial measurements.
 - Primary metric: Macro-F1 for multiclass classification, with accuracy and a confusion matrix as secondary results.
+- Evaluation split: preserve UCI's subject-disjoint official test set. Create one fixed, subject-aware validation split from official training subjects using GroupShuffleSplit with test_size=0.20 and random_state=42.
 - Submission parts: Part I (14 October 2026) and Part II (two calendar days before the official final examination date).
 
-Update this section when the dataset, split, metric, and random seeds are frozen. Do not commit raw or processed dataset files unless the course policy explicitly requires it.
+The validation subjects are 1, 3, 15, 25, and 27; the remaining 16 official training subjects form the model-fitting subset. No official-test model score or tuning was performed. A structural integrity audit inspected test-file shapes, subject IDs, and class IDs; see data/README.md. Do not commit raw or processed dataset files.
 
 ## Repository map
 
@@ -42,4 +43,3 @@ Record the actual Python/package versions and random seeds used for submitted ex
 - Preserve the first attempt before inspecting reference implementations or using AI for that task; commit the later corrected state separately.
 - Cite external code precisely and explain the connection between equations and code.
 - Do not backdate work or rewrite a checkpoint after it has been reviewed.
-
