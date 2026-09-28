@@ -1,1 +1,2 @@
 part,course_week,model,split,seed,macro_f1,accuracy,train_seconds,inference_seconds,notes
+R0,R0,DummyClassifier-most_frequent,subject_group_validation,42,0.051751094434,0.183786785119,0.000326,0.000040,Validation only; baseline reads train files; test structural audit only; see result JSON

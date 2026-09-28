@@ -1,0 +1,99 @@
+{
+  "date": "2026-09-25",
+  "dataset": "UCI HAR Dataset Version 1.0 (UCI record 240)",
+  "experiment": "DecisionTreeClassifier max_depth sensitivity",
+  "criterion": "gini",
+  "other_parameters_held_fixed": {
+    "min_samples_split": 2,
+    "min_samples_leaf": 1,
+    "random_state": 42
+  },
+  "validation_policy": "GroupShuffleSplit(test_size=0.20, random_state=42) on official training subjects",
+  "fit_subjects": [
+    5,
+    6,
+    7,
+    8,
+    11,
+    14,
+    16,
+    17,
+    19,
+    21,
+    22,
+    23,
+    26,
+    28,
+    29,
+    30
+  ],
+  "validation_subjects": [
+    1,
+    3,
+    15,
+    25,
+    27
+  ],
+  "fit_windows": 5551,
+  "validation_windows": 1801,
+  "rows": [
+    {
+      "max_depth": 1,
+      "tree_depth": 1,
+      "leaf_count": 2,
+      "train_macro_f1": 0.23016160154365653,
+      "train_accuracy": 0.38353449828859665,
+      "validation_macro_f1": 0.22640982691233946,
+      "validation_accuracy": 0.3620210993892282
+    },
+    {
+      "max_depth": 2,
+      "tree_depth": 2,
+      "leaf_count": 3,
+      "train_macro_f1": 0.3691662719445321,
+      "train_accuracy": 0.5435056746532156,
+      "validation_macro_f1": 0.3750914801306348,
+      "validation_accuracy": 0.5496946141032759
+    },
+    {
+      "max_depth": 3,
+      "tree_depth": 3,
+      "leaf_count": 5,
+      "train_macro_f1": 0.7144100456962387,
+      "train_accuracy": 0.7879661322284273,
+      "validation_macro_f1": 0.7239694876629189,
+      "validation_accuracy": 0.787340366463076
+    },
+    {
+      "max_depth": 5,
+      "tree_depth": 5,
+      "leaf_count": 16,
+      "train_macro_f1": 0.9196288236926159,
+      "train_accuracy": 0.9212754458656098,
+      "validation_macro_f1": 0.823555282227964,
+      "validation_accuracy": 0.832870627429206
+    },
+    {
+      "max_depth": 10,
+      "tree_depth": 10,
+      "leaf_count": 86,
+      "train_macro_f1": 0.9878530832844782,
+      "train_accuracy": 0.987930102684201,
+      "validation_macro_f1": 0.8852869675840416,
+      "validation_accuracy": 0.8878400888395336
+    },
+    {
+      "max_depth": null,
+      "tree_depth": 19,
+      "leaf_count": 136,
+      "train_macro_f1": 1.0,
+      "train_accuracy": 1.0,
+      "validation_macro_f1": 0.8665882654597189,
+      "validation_accuracy": 0.8700721821210439
+    }
+  ],
+  "official_test_files_read": false,
+  "python_version": "3.13.9",
+  "numpy_version": "2.5.2",
+  "scikit_learn_version": "1.9.0"
+}

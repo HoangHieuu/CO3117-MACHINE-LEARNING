@@ -21,6 +21,7 @@ venv/
 # Local datasets and generated outputs
 data/raw/
 data/processed/
+/data/human+activity+recognition+using+smartphones/
 results/generated/
 
 # OS/editor files
